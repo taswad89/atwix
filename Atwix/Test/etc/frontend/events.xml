@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="customer_register_success">
+		<observer name="atwix_test_observer_customer_registersuccess_customer_register_success" instance="Atwix\Test\Observer\Customer\RegisterSuccess"/>
+	</event>
+	<event name="customer_register_success">
+        <observer name="sendmail_toadmin" instance="Atwix\Test\Observer\SendMailToAdmin"/>
+    </event>
+</config>
